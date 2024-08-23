@@ -10,12 +10,14 @@ import Nav from '../components/Nav/Nav'
 const RouteController = () => {
   return (
    <>
-    <Nav />
+  
       <Routes>
-      <Route path='/' element={<Suspense fallback={<div>Loading...</div>}><Home /></Suspense> } />
       <Route path='/login' element={<Suspense fallback={<div>Loading...</div>}><Login /></Suspense>} />
+      <Route path="/" element={<Nav/>}>
+      <Route path='/' element={<Suspense fallback={<div>Loading...</div>}><Home /></Suspense> } />
       <Route path='/single/:id' element={<Suspense fallback={<div>Loading...</div>}><Single /></Suspense>} />
       <Route path='/collection' element={<Suspense fallback={<div>Loading...</div>}><Collection/></Suspense>} />
+      </Route>
     </Routes>
    </>
   )

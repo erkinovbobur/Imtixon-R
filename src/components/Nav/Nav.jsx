@@ -4,6 +4,7 @@ import  colc from '../../assets/colc.svg'
 import shop from '../../assets/shop.svg'
 import logo from '../../assets/logo.svg'
 import { useTranslation } from 'react-i18next'
+import { Outlet } from 'react-router-dom'
 const Nav = () => {
   const { t, i18n } = useTranslation();
   return (
@@ -64,7 +65,9 @@ const Nav = () => {
           <p className="ml-2 text-gray-400 hover:underline cursor-pointer">{t('nav12')}</p>
         </div>
       </div>
-
+      <main>
+    <Outlet />
+  </main>
 
     </>
   

@@ -12,28 +12,36 @@ const Single = () => {
     }
 
     return (
-        <div className="flex justify-center items-center min-h-screen p-6">
-            <div className="w-full max-w-2xl shadow-lg p-4 bg-white rounded-lg">
-                <div className="flex flex-col md:flex-row items-start gap-8 md:items-center">
-                    <div className="flex-shrink-0">
+        <div className="flex justify-center items-center min-h-screen p-6 bg-gray-100">
+            <div className="w-full max-w-4xl shadow-lg p-6 bg-white rounded-lg">
+                <div className="flex flex-col md:flex-row items-start gap-6">
+                    <div className="flex-shrink-0 w-full md:w-auto">
                         <img
                             src={data.thumbnail}
                             alt={data.title}
-                            className="w-[300px] h-[360px] object-cover"
+                            className="w-[400px] h-[450px] object-cover border border-gray-300"
                         />
                     </div>
                     <div className="flex-grow">
-                        <p className="mb-2 font-bold text-2xl">{data.title}</p>
-                        <div className="w-[260px] h-[0.5px] bg-gray-300 mt-4"></div>
-                        <p className="mb-2 text-lg font-semibold mt-6">Category: {data.category}</p>
-                        <p className="mb-2 text-lg font-semibold">Brand: {data.brand}</p>
-                        <p className="mb-4 text-lg font-semibold text-green-600">Price: ${data.price}</p>
-                        <p className="mb-4 text-lg">{data.description}</p>
-                        <div className="w-[260px] h-[0.5px] bg-gray-300 mt-4"></div>
-                        <div className="w-[230px] mt-4">
-                           <Link to='/Login'>  <button className="w-full h-10 px-4 py-2 bg-[#0053A0] text-white rounded-lg hover:bg-blue-600">Buy Now</button> </Link>
-                            <button className="w-full h-10 px-4 py-2 bg-[#3498CA] text-white rounded-lg mt-2 hover:bg-blue-600">Add to Cart</button>
-                            <button className="w-full h-10 px-4 py-2 bg-white text-[#0053A0] border border-[#0053A0] rounded-lg mt-2 hover:bg-[#0053A0] hover:text-white">Add to Wishlist</button>
+                        <h1 className="text-2xl font-bold mb-2">{data.title}</h1>
+                        <div className="h-[2px] w-[100%] bg-gray-300 mb-4"></div>
+                        <p className="text-lg font-semibold mb-2">Category: {data.category}</p>
+                        <p className="text-lg font-semibold mb-2">Brand: {data.brand}</p>
+                        <p className="text-xl font-bold text-green-600 mb-4">Price: ${data.price}</p>
+                        <p className="mb-4">{data.description}</p>
+                        <div className="h-[2px] w-[100%] bg-gray-300 mb-4"></div>
+                        <div className="mt-4 space-y-3">
+                            <Link to='/Login'>
+                                <button className="w-full h-10 bg-[#0053A0] text-white rounded-lg hover:bg-blue-600">
+                                    Buy It Now
+                                </button>
+                            </Link>
+                            <button className="w-full h-10 bg-[#3498CA] text-white rounded-lg hover:bg-blue-600">
+                                Add to Cart
+                            </button>
+                            <button className="w-full h-10 bg-white text-[#0053A0] border border-[#0053A0] rounded-lg hover:bg-[#0053A0] hover:text-white">
+                                Add to Wishlist
+                            </button>
                         </div>
                     </div>
                 </div>
