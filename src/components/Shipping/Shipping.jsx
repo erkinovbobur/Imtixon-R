@@ -19,7 +19,7 @@ const Shipping = () => {
           showThumbs={false}
           infiniteLoop={true}
           autoPlay={true}
-          interval={1000}
+          interval={3000}
           centerMode={true}
           centerSlidePercentage={20}
           dynamicHeight={false}

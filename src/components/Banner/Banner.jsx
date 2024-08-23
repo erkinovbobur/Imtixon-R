@@ -11,19 +11,18 @@ const Banner = () => {
                </a> </li>
                  <li> <a href="#" className="text-gray-600 hover:underline flex items-center">{t('h2')}</a></li>
                   <li> <a href="#" className="text-gray-600 hover:underline">{t('h3')}</a></li>
-                  <li><a href="#" className="text-gray-600 hover:underline">{t('h4')}</a></li>
-                  <li><a href="#" className="text-gray-600 hover:underline">{t('h5')}</a></li>
-                  <li><a href="#" className="text-gray-600 hover:underline">{t('h6')}</a></li>
-                  <li><a href="#" className="text-gray-600 hover:underline">{t('h7')}</a></li>
-                  <li><a href="#" className="text-gray-600 hover:underline">{t('h8')}</a></li>
-                  <li><a href="#" className="text-gray-600 hover:underline">{t('h9')}</a></li>
+                    <li><a href="#" className="text-gray-600 hover:underline">{t('h4')}</a></li>
+                      <li><a href="#" className="text-gray-600 hover:underline">{t('h5')}</a></li>
+                       <li><a href="#" className="text-gray-600 hover:underline">{t('h6')}</a></li>
+                        <li><a href="#" className="text-gray-600 hover:underline">{t('h7')}</a></li>
+                      <li><a href="#" className="text-gray-600 hover:underline">{t('h8')}</a></li>
+                    <li><a href="#" className="text-gray-600 hover:underline">{t('h9')}</a></li>
                   <li><a href="#" className="text-gray-600 hover:underline">{t('h10')}</a></li>
-                  <li><a href="#" className="text-gray-600 hover:underline">{t('h11')}</a></li>
-                  <li><a href="#" className="text-gray-600 hover:underline">{t('h12')}</a></li>
-                  <li><a href="#" className="text-gray-600 hover:underline">{t('h13')}</a></li>
+                 <li><a href="#" className="text-gray-600 hover:underline">{t('h11')}</a></li>
+              <li><a href="#" className="text-gray-600 hover:underline">{t('h12')}</a></li>
+        <li><a href="#" className="text-gray-600 hover:underline">{t('h13')}</a></li>
           </ul>
-       
-       </>
+        </>
    
   )
 }
